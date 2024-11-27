@@ -18,7 +18,7 @@ bot = telebot.TeleBot(API)
 def start(message):
     markup = types.ReplyKeyboardMarkup(row_width=2)
     itembtn1 = types.KeyboardButton("Как дела?")
-    itembtn2 = types.KeyboardButton("Статус")
+    itembtn2 = types.KeyboardButton("/status")
     markup.add(itembtn1, itembtn2)
 
     user_id = message.from_user.id
